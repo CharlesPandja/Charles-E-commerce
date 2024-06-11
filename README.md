@@ -14,42 +14,6 @@ PHP : Langage principal pour le développement backend.
 MySQL : Base de données pour stocker les informations des utilisateurs, produits, paniers et commandes.
 HTML/CSS : Structure et style des pages web.
 Bootstrap : Framework CSS pour un design réactif et moderne.
-Installation
-Clonez le repository :
-bash
-Copier le code
-git clone https://github.com/votre-utilisateur/E-commerce.git
-Naviguez dans le répertoire du projet :
-bash
-Copier le code
-cd E-commerce
-Importez le fichier database.sql dans votre base de données MySQL pour créer les tables nécessaires.
-Configurez les paramètres de connexion à la base de données dans model/Connection.php :
-php
-Copier le code
-class Connection {
-    public static function getConnect() {
-        try {
-            $db = new PDO("mysql:host=localhost;dbname=ecommerce", "root", "votre-mot-de-passe");
-        } catch (PDOException $e) {
-            echo $e->getMessage();
-            die;
-        }
-        return $db;
-    }
-}
-Démarrez votre serveur local (par exemple, XAMPP) et placez le projet dans le répertoire accessible par le serveur.
-Accédez à l'application via votre navigateur web :
-bash
-Copier le code
-http://localhost/E-commerce/gestion/index.php
-Utilisation
-Inscription : Créez un compte utilisateur sur la page d'inscription.
-Connexion : Connectez-vous avec vos identifiants.
-Navigation des produits : Parcourez la liste des produits disponibles.
-Ajout au panier : Ajoutez des produits à votre panier.
-Gestion du panier : Modifiez les quantités et visualisez le total du panier.
-Passation de commande : Cliquez sur "Passer commande" pour transformer votre panier en commande.
-Suivi des commandes : Consultez l'historique de vos commandes passées.
+
 Contributions
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir des issues pour signaler des bugs ou proposer des améliorations.
